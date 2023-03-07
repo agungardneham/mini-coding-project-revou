@@ -12,14 +12,22 @@
 
     <script>
         function validateForm() {
+            //validate email
              let x = document.forms["form"]["email"].value;
                 if (x == "") {
                     alert("Harap isi email Anda");
                 return false;
+                } else {
+                    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if(!emailPattern.test(email)){
+                        alert("Format email salah");
+                        return false;
+                    }
                 }
             }
+            //validate nomor WA
             let x = document.forms["form"]["wanumber"].value;
-                if (isNaN(x) || x < 1 || x > 99999999999999){
+                if (isNaN(x) || x < 99999999999 || x > 99999999999999){
                     alert("Harap isi nomor WA dengan awalan +62");
                     return false;
                 }
@@ -194,23 +202,5 @@
         <a href="#">Terms of Service</a><a href="#">Privacy Policy</a><br>
         <div>&copy; 2023 Re:Kreasi</div>
     </footer>
-
-    <script>
-        const email = document.getElementById('email')
-        const phone = document.getElementById('wanumber')
-        const form = document.getElementById('form') 
-
-        //validate email
-        if (email==""){
-            alert("Harap isi e-mail Anda");
-            return false;
-        } else{
-            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if(!emailPattern.test(email)){
-                alert("Format email salah");
-                return false;
-            }
-        }
-    </script>
 </body>
 </html>
