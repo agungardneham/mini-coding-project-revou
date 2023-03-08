@@ -52,7 +52,37 @@
         <!--Hero image latar belakangnya suatu gambar, ditumpuk logo berteks-->
         <div id="home">    
             <div class="hero-image">
-                <img src="resource/bg.jpg" style="max-width: 1215px; height: auto; opacity: 0.75">
+                <img class="img-slideshow" src="resource/bg.jpg">
+                <img class="img-slideshow" src="resource/bali.jpg">
+                <img class="img-slideshow" src="resource/bandung.jpg">
+                <img class="img-slideshow" src="resource/manado.jpeg">
+                <img class="img-slideshow" src="resource/medan.jpg">
+
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+            
+                    function plusDivs(n) {
+                      showDivs((slideIndex += n));
+                    }
+            
+                    function showDivs(n) {
+                      var i;
+                      var imgList = document.getElementsByClassName("img-slideshow");
+                      if (n > imgList.length) slideIndex = 1;
+                      else if (n < 1) slideIndex = imgList.length;
+            
+                      for (i = 0; i < imgList.length; i++) {
+                        imgList[i].style.display = "none";
+                      }
+            
+                      imgList[slideIndex - 1].style.display = "block";
+                    }
+            
+                    setInterval(() => {
+                      plusDivs(1);
+                    }, 1000);
+                  </script>
                 <div class="hero-textlogo">
                     <img src="resource/textlogo.png">
                 </div>
