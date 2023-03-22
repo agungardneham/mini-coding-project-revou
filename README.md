@@ -8,3 +8,4 @@ In this course, I learn about :
 - Basic of CSS (selector, flexbox, design and color, etc)
 - Github and how to connect my coding software to github
 - A little bit of javascript (still need to learn this)
+- And combining all of that to make a simple travel agent website (in github page)
