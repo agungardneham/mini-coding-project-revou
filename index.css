@@ -387,7 +387,7 @@ footer a{
 
 /*Media queries*/
 /*Responsive untuk layar hingga 480px*/
-@media screen and (max-width: 480px){
+@media screen and (min-width: 480px){
     *{
         margin: 0;
         padding: 0;
