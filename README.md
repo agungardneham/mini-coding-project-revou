@@ -9,3 +9,10 @@ In this course, I learn about :
 - Github and how to connect my coding software to github
 - A little bit of javascript (still need to learn this)
 - And combining all of that to make a simple travel agent website (in github page)
+
+What I need to improve :
+- Navbar
+- Script (JS)
+- Add animation (animate on scroll?)
+- Hero image slider (JS again)
+- Media queries
