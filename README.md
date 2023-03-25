@@ -14,5 +14,6 @@ What I need to improve :
 - Navbar
 - Script (JS)
 - Add animation (animate on scroll?)
-- Hero image slider (JS again)
+- Hero image slider (JS)
 - Media queries
+- Form validation (JS)
